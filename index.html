@@ -43,7 +43,7 @@
     <div class="hero-bg-pattern"></div>
     <div class="hero-overlay"></div>
     <div class="hero-container">
-      <div class="hero-content">
+      <div class="hero-content" style="text-align: center; margin: 0 auto; align-items: center;">
         <div class="hero-badge animate-fade-up" style="animation-delay:0.1s">
           <span class="badge-dot"></span>
           <span>⭐ 4.7 · 297 Google Reviews · Halal Certified</span>
@@ -54,7 +54,7 @@
         <p class="hero-subtitle animate-fade-up" style="animation-delay:0.4s">
           High Wycombe's hidden gem. Fresh flavours, bold spices,<br class="desktop-only" /> and warm Lebanese hospitality — every single visit.
         </p>
-        <div class="hero-actions animate-fade-up" style="animation-delay:0.55s">
+        <div class="hero-actions animate-fade-up" style="animation-delay:0.55s; justify-content: center;">
           <a href="#bestsellers" class="btn btn-primary btn-large">
             <span>🥙</span> Explore Menu
           </a>
@@ -82,14 +82,6 @@
             <span class="stat-value">حلال</span>
             <span class="stat-label">Halal</span>
           </div>
-        </div>
-      </div>
-      <div class="hero-image-wrap animate-fade-left" style="animation-delay:0.3s">
-        <div class="hero-image-glow"></div>
-        <img src="hero_food.png" alt="Mezza House Lebanese feast platter with shawarma, mezze, and grilled meats" class="hero-img" />
-        <div class="hero-image-badge">
-          <span class="badge-star">⭐</span>
-          <span>Most Loved<br/>in High Wycombe</span>
         </div>
       </div>
     </div>
@@ -303,7 +295,7 @@
   </section>
 
   <!-- ============ REVIEWS ============ -->
-  <section class="reviews-section" id="reviews">
+  <section class="reviews-section" id="reviews" style="position: relative; overflow: hidden;">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">Google Reviews</span>
@@ -417,6 +409,12 @@
           See All 297 Reviews on Google →
         </a>
       </div>
+
+      <!-- Platter image moved from hero to reviews -->
+      <div class="hero-image-wrap reveal" style="position: absolute; right: -80px; bottom: -80px; opacity: 0.6; pointer-events: none; z-index: 0; transform: scale(0.65);">
+        <img src="hero_food.png" alt="Lebanese feast" class="hero-img" />
+      </div>
+
     </div>
   </section>
 
